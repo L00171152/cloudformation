@@ -1,0 +1,22 @@
+Resources:
+  ATUec2:
+    Type: AWS::EC2::Instance
+    Properties:
+       InstanceType: t2.micro
+       ImageId: ami-096800910c1b781ba
+       Tags: 
+          - Key: "Name"
+            Value: "Ec2TEST"
+          - Key: "Purpose"
+            Value: "Testing"
+  ATUs3:          
+    Type: AWS::S3::Bucket
+    Properties:
+      "AccessControl": "PublicRead"
+      "BucketName": "atuvijay67963"
+      Tags:
+        - Key: "Name"
+          Value: "atuvijay6796"
+        - Key: "Type"
+          Value: "Test_Bucket"
+           
